@@ -1,10 +1,6 @@
 # MailApplication
-This is a user-mail application having user-registration, login, logout, mail-send, star-mail functionality.
+The Masai Mail Application is a secure email service that allows users to send and receive emails, with features such as multiple recipients, starring and deleting emails, and user authentication.
 
-# BookStoreApplication
-Masai Book Store Application is a web application for a book store that allows users to register, login, browse books, add books to their cart, and purchase books. The application also includes features like tracking popular authors, refreshing the cart, analyzing the most number of unique books that the user can buy, and deleting an author
-
-#Technologies Used
 
 # Tech Stack
 - Java
@@ -17,6 +13,26 @@ Masai Book Store Application is a web application for a book store that allows u
 - Maven
 
 
+Features
+- Users can send and receive emails
+- Users can send emails to multiple recipients
+- Users can star and delete emails
+- Users can register and login to the application
+- Passwords are securely hashed and stored in the database
+- Global exception handling is implemented to handle exceptions in a single place
+- Input validation is implemented to ensure the data entered by users is in the correct format
+- Authentication is implemented using Spring Security to verify user credentials
+
+
+# Modules
+
+- Login Module
+- User Module
+
+- Email Module
+- Security Module
+
+
 
 
 
@@ -27,12 +43,13 @@ Masai Book Store Application is a web application for a book store that allows u
 - Update the port number, username and password as per your local database configuration.
 
 ```
-    server.port=8080
+      server.port=8080
 
-    spring.datasource.url=jdbc:mysql://localhost:3306/MailDB;
+    spring.datasource.url=jdbc:mysql://localhost:3306/MasaiMailDB;
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     spring.datasource.username=root
     spring.datasource.password=root
+
 ```
 
 # API Root Endpoint
@@ -42,6 +59,3 @@ https://localhost:8080/
 ```
 http://localhost:8080/swagger-ui/
 ```
-
-Authentication
-The application uses Spring Security for authentication. Users can register and log in with their email and password.
